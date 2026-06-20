@@ -1,6 +1,5 @@
 package com.fleeksoft.ksoup.parser
 
-import co.touchlab.stately.collections.ConcurrentMutableList
 import com.fleeksoft.ksoup.BuildConfig
 import com.fleeksoft.ksoup.Platform
 import com.fleeksoft.ksoup.System
@@ -8,8 +7,8 @@ import com.fleeksoft.ksoup.isJsOrWasm
 import com.fleeksoft.ksoup.nodes.Document
 import com.fleeksoft.ksoup.nodes.Element
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.joinAll
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.test.runTest
 import kotlin.test.Ignore
 import kotlin.test.Test
@@ -87,17 +86,14 @@ class ParserIT {
 
         val numCoroutines = 10
         val numLoops = 20
-        val toCheck = ConcurrentMutableList<Document>()
 
-        val jobs = List(numCoroutines) {
-            launch(Dispatchers.Default) {
-                repeat(numLoops) {
-                    val doc = parser.parseInput(html, "")
-                    toCheck.add(doc)
+        val toCheck = List(numCoroutines) {
+            async(Dispatchers.Default) {
+                List(numLoops) {
+                    parser.parseInput(html, "")
                 }
             }
-        }
-        jobs.joinAll()
+        }.awaitAll().flatten()
 
         toCheck.forEach { doc ->
             assertTrue(doc.hasSameValue(expectDoc))
@@ -114,18 +110,16 @@ class ParserIT {
 
         val numCoroutines = 10
         val numLoops = 20
-        val toCheck = ConcurrentMutableList<Element>()
 
-        val jobs = List(numCoroutines) {
-            launch(Dispatchers.Default) {
-                repeat(numLoops) {
+        val toCheck = List(numCoroutines) {
+            async(Dispatchers.Default) {
+                List(numLoops) {
                     val cloned: Element = baseElement.clone()
                     cloned.append(append)
-                    toCheck.add(cloned)
+                    cloned
                 }
             }
-        }
-        jobs.joinAll()
+        }.awaitAll().flatten()
 
         baseElement.append(append)
         toCheck.forEach { element ->

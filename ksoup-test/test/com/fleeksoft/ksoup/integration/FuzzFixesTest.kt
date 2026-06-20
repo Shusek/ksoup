@@ -40,6 +40,7 @@ class FuzzFixesTest {
 
     @Test
     fun testHtmlParse() = runTest {
+
         parameterizedTestSuspend(fuzzTestFiles) { fuzzFile ->
             val input = TestHelper.readResourceAsString(fuzzFile).byteInputStream()
             var doc: Document = Ksoup.parseInput(input, charsetName = "UTF-8", baseUri = "https://example.com/")
@@ -55,6 +56,7 @@ class FuzzFixesTest {
 
     @Test
     fun testHtmlFragmentParse() = runTest {
+
         parameterizedTestSuspend(fuzzTestFiles) { fuzzFile ->
             val html = TestHelper.readResourceAsString(fuzzFile)
             val doc: Document = Ksoup.parseBodyFragment(html)
@@ -64,6 +66,7 @@ class FuzzFixesTest {
 
     @Test
     fun testXmlParse() = runTest {
+
         parameterizedTestSuspend(fuzzTestFiles) { fuzzFile ->
             val input = TestHelper.readResourceAsString(fuzzFile).byteInputStream()
             var doc: Document = Ksoup.parseInput(input, charsetName = "UTF-8", baseUri = "https://example.com/", parser = Parser.xmlParser())

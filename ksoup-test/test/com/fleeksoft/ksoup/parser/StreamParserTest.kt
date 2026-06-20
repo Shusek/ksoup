@@ -296,6 +296,7 @@ class StreamParserTest {
 
     @Test
     fun canParseFileReader() = runTest {
+
         val resourceName = "htmltests/large.html.gz"
         val file = TestHelper.getResourceAbsolutePath(resourceName)
         val reader = TestHelper.readGzipResource(resourceName).reader()

@@ -1,24 +1,26 @@
 product:
   type: lib
-  platforms: [ jvm, js, wasm, android, linuxX64, linuxArm64, tvosArm64, tvosX64, tvosSimulatorArm64, macosX64, macosArm64, iosArm64, iosSimulatorArm64, iosX64, mingwX64 ]
+  platforms: [ jvm, js, wasm, wasmWasi, android, linuxX64, linuxArm64, tvosArm64, tvosX64, tvosSimulatorArm64, macosX64, macosArm64, iosArm64, iosSimulatorArm64, iosX64, mingwX64 ]
 
 apply: [ ../common.module-template.yaml ]
 
 aliases:
   - jvmAndAndroid: [ jvm, android ]
+  - nonWasm: [ jvm, js, android, linuxX64, linuxArm64, tvosArm64, tvosX64, tvosSimulatorArm64, macosX64, macosArm64, iosArm64, iosSimulatorArm64, iosX64, mingwX64 ]
 
 repositories:
   - mavenLocal
 
 test-dependencies:
   - $libs.fleeksoft.io.kotlinx
-  - $libs.korlibs.io
   - $libs.kotlinx.io
   - $libs.kotlinx.coroutines.test
   - $libs.kotlinx.datetime
   - $libs.stately.concurrency
-  - $libs.stately.concurrent.collections
 #  - $libs.fleeksoft.charset.ext
+
+test-dependencies@nonWasm:
+  - $libs.korlibs.io
 
 test-dependencies@jvmAndAndroid:
   - $libs.jsoup

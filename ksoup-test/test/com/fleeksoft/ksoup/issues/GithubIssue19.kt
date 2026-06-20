@@ -14,6 +14,7 @@ class GithubIssue19 {
 
     @Test
     fun testAttributeIncorrectMixCharsetIssue() = runTest {
+
         val resourceName = "htmltests/issue19.html.gz"
         val document = TestHelper.parseResource(resourceName, baseUri = "http://example.com")
         val imagesEls: Elements = document.select("img")

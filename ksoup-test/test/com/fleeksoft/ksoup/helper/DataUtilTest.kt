@@ -12,7 +12,6 @@ import com.fleeksoft.ksoup.io.internal.ControllableInputStream
 import com.fleeksoft.ksoup.nodes.Document
 import com.fleeksoft.ksoup.parseInput
 import com.fleeksoft.ksoup.parser.Parser
-import korlibs.io.lang.toByteArray
 import kotlinx.coroutines.test.runTest
 import kotlin.math.min
 import kotlin.test.*
@@ -252,6 +251,7 @@ class DataUtilTest {
 
     @Test
     fun supportsUTF8BOM() = runTest {
+
         val source = TestHelper.readResource("bomtests/bom_utf8.html")
         val doc: Document = Ksoup.parseInput(input = source, baseUri = "http://example.com", charsetName = null)
         assertEquals("OK", doc.head().select("title").text())
@@ -267,6 +267,7 @@ class DataUtilTest {
 
     @Test
     fun supportsZippedUTF8BOM() = runTest {
+
         val resourceName = "bomtests/bom_utf8.html.gz"
         val doc = TestHelper.parseResource(resourceName, baseUri = "http://example.com")
 
@@ -279,6 +280,7 @@ class DataUtilTest {
 
     @Test
     fun streamerSupportsZippedUTF8BOM() = runTest {
+
         val source = TestHelper.readGzipResource("bomtests/bom_utf8.html.gz")
         val doc = DataUtil.streamParser(
             input = source,
@@ -307,6 +309,7 @@ class DataUtilTest {
 
     @Test
     fun loadsGzipFile() = runTest {
+
         val resourceName = "htmltests/gzip.html.gz"
         val doc = TestHelper.parseResource(resourceName)
         assertEquals("Gzip test", doc.title())
@@ -315,6 +318,7 @@ class DataUtilTest {
 
     @Test
     fun loadsZGzipFile() = runTest {
+
         // compressed on win, with z suffix
         val resourceName = "htmltests/gzip.html.z"
         val doc = TestHelper.parseResource(resourceName)
@@ -324,6 +328,7 @@ class DataUtilTest {
 
     @Test
     fun handlesFakeGzipFile() = runTest {
+
         val resourceName = "htmltests/fake-gzip.html.gz"
         val doc = TestHelper.parseResource(resourceName)
         assertEquals("This is not gzipped", doc.title())
@@ -332,6 +337,7 @@ class DataUtilTest {
 
     @Test
     fun testStringVsSourceReaderParse() = runTest {
+
         val input: String = TestHelper.readResourceAsString("htmltests/large.html.gz")
 
         val expected = Ksoup.parse(input, "https://example.com")
@@ -343,6 +349,7 @@ class DataUtilTest {
 
     @Test
     fun handlesChunkedInputStream() = runTest {
+
         val resourceName = "htmltests/large.html.gz"
         val input = TestHelper.readResourceAsString(resourceName)
         val stream = VaryingReadInputStream(input.byteInputStream())
@@ -355,6 +362,7 @@ class DataUtilTest {
 
     @Test
     fun handlesUnlimitedRead() = runTest {
+
         val input: String = TestHelper.readResourceAsString("htmltests/large.html.gz")
         val stream = VaryingReadInputStream(input.byteInputStream())
         val byteBuffer = DataUtil.readToByteBuffer(stream, 0)
@@ -382,6 +390,7 @@ class DataUtilTest {
 
     @Test
     fun streamParserSurrogateAcrossBuffer() = runTest {
+
         // https://github.com/jhy/jsoup/issues/2353
         val inputPath = TestHelper.readResourceAsString("fuzztests/2353.html.gz").byteInputStream()
         DataUtil.streamParser(inputPath, "", Charsets.UTF8, Parser.htmlParser()).use { parser ->
@@ -393,6 +402,7 @@ class DataUtilTest {
 
     @Test
     fun parseSurrogateAcrossBuffer() = runTest {
+
         val doc: Document = TestHelper.parseResource("fuzztests/2353.html.gz")
         assertTrue(doc.html().contains("Read-Fully!"))
     }
@@ -410,7 +420,7 @@ class DataUtilTest {
         val html = sb.toString()
 
 
-        val bytes: ByteArray = html.toByteArray()
+        val bytes: ByteArray = html.toByteArray(Charsets.UTF8)
         val input = ControllableInputStream.wrap(BufferedOnceAvailableStream(bytes), 0)
 
         val charsetDoc = DataUtil.detectCharset(input, charsetName = null, baseUri = "http://example.com/", parser = Parser.htmlParser())

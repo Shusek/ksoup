@@ -2,16 +2,8 @@ package com.fleeksoft.ksoup
 
 import com.fleeksoft.io.InputStream
 import com.fleeksoft.io.inputStream
-import com.fleeksoft.io.kotlinx.asInputStream
 import com.fleeksoft.ksoup.nodes.Document
 import com.fleeksoft.ksoup.parser.Parser
-import korlibs.io.compression.deflate.GZIP
-import korlibs.io.compression.uncompress
-import korlibs.io.file.std.uniVfs
-import kotlinx.io.buffered
-import kotlinx.io.files.Path
-import kotlinx.io.files.SystemFileSystem
-import kotlinx.io.readByteArray
 
 object TestHelper {
 
@@ -31,7 +23,7 @@ object TestHelper {
     }
 
     suspend fun readResourceAsString(resourceName: String): String {
-        val bytes: ByteArray = if (resourceName.endsWith(".gz")) {
+        val bytes: ByteArray = if (resourceName.endsWith(".gz") || resourceName.endsWith(".z")) {
             readGzipFile(resourceName).readAllBytes()
         } else {
             readFile(resourceName).readAllBytes()
@@ -50,20 +42,20 @@ object TestHelper {
     private suspend fun readFile(resource: String): InputStream {
         val abs = getResourceAbsolutePath(resource, absForWindows = false)
         return if (abs.startsWith("https://", ignoreCase = true)) {
-            abs.uniVfs.readAll().inputStream()
+            TestResourceSupport.readUrlBytes(abs).inputStream()
         } else {
-            SystemFileSystem.source(Path(abs)).buffered().asInputStream()
+            TestResourceSupport.readResourceBytes(resource, abs).inputStream()
         }
     }
 
     private suspend fun readGzipFile(resource: String): InputStream {
         val abs = getResourceAbsolutePath(resource, absForWindows = false)
         val bytes = if (abs.startsWith("https://", ignoreCase = true)) {
-            abs.uniVfs.readAll()
+            TestResourceSupport.uncompressGzip(TestResourceSupport.readUrlBytes(abs))
         } else {
-            SystemFileSystem.source(Path(abs)).buffered().readByteArray()
+            TestResourceSupport.readCompressedResourceBytes(resource, abs)
         }
-        return bytes.uncompress(GZIP).inputStream()
+        return bytes.inputStream()
     }
 
     suspend fun parseResource(
@@ -96,5 +88,5 @@ object TestHelper {
 
     fun isGB2312Supported(): Boolean = true
 
-    fun canReadResourceFile(): Boolean = Platform.isWasmJs().not() && BuildConfig.isCore.not()
+    fun canReadResourceFile(): Boolean = TestResourceSupport.canReadResourceFiles && BuildConfig.isCore.not()
 }

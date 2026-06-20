@@ -10,6 +10,7 @@ class PrinterTest {
 
     @Test
     fun pretty() = runTest {
+
         // parse /printertests/input-1.html, check formatted same as pretty-1.html
         val doc = TestHelper.parseResource(resourceName = "printertests/input-1.html")
         val expected = TestHelper.readResourceAsString("printertests/pretty-1.html")
@@ -20,6 +21,7 @@ class PrinterTest {
 
     @Test
     fun passthru() = runTest {
+
         // disable pretty, should be almost 1:1 of input (other than a couple parse normalizations; doctype, pre)
         val doc = TestHelper.parseResource("/printertests/input-1.html")
         doc.outputSettings().prettyPrint(false)
@@ -32,6 +34,7 @@ class PrinterTest {
 
     @Test
     fun outline() = runTest {
+
         // outline mode, most everything gets indented
         val doc = TestHelper.parseResource(resourceName = "printertests/input-1.html")
         doc.outputSettings().outline(true)

@@ -10,6 +10,7 @@ public enum class PlatformType {
     MAC,
     WINDOWS,
     WASM_JS,
+    WASM_WASI,
 }
 
 public expect object Platform {

@@ -15,6 +15,7 @@ class ReaderTest {
 
     @Test
     fun readerOfStringAndFile() = runTest {
+
         // make sure that reading from a String and from a File produce the same bytes
         val resourceName = "fuzztests/garble.html"
         val fromBytes = TestHelper.readResourceAsString(resourceName)

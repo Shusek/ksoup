@@ -162,6 +162,7 @@ class DocumentTest {
 
     @Test
     fun testLocation() = runTest {
+
         // tests location vs base href
         val resourceName = "htmltests/basehref.html"
         val doc = TestHelper.parseResource(

@@ -67,6 +67,7 @@ class ParseTest {
 
     @Test
     fun testLowercaseUtf8Charset() = runTest {
+
         val resourceName = "htmltests/lowercase-charset-test.html"
         val doc = TestHelper.parseResource(resourceName)
         val form = doc.select("#form").first()
@@ -76,6 +77,7 @@ class ParseTest {
 
     @Test
     fun testXwiki() = runTest {
+
         // this tests that when in CharacterReader we hit a buffer while marked, we preserve the mark when buffered up and can rewind
         val resourceName = "htmltests/xwiki-1324.html.gz"
         val doc: Document = TestHelper.parseResource(resourceName, baseUri = "https://localhost/")
@@ -90,6 +92,7 @@ class ParseTest {
 
     @Test
     fun testXwikiExpanded() = runTest {
+
         // this tests that if there is a huge illegal character reference, we can get through a buffer and rewind, and still catch that it's an invalid refence,
         // and the parse tree is correct.
         val parser = Parser.htmlParser()
@@ -112,6 +115,7 @@ class ParseTest {
 
     @Test
     fun testWikiExpandedFromString() = runTest {
+
         val html = TestHelper.readResourceAsString("htmltests/xwiki-edit.html.gz")
         val doc = Ksoup.parse(html)
         assertEquals("XWiki Jetty HSQLDB 12.1-SNAPSHOT", doc.select("#xwikiplatformversion").text())
@@ -122,6 +126,7 @@ class ParseTest {
 
     @Test
     fun testWikiFromString() = runTest {
+
         val html = TestHelper.readResourceAsString("htmltests/xwiki-1324.html.gz")
         val doc = Ksoup.parse(html)
         assertEquals("XWiki Jetty HSQLDB 12.1-SNAPSHOT", doc.select("#xwikiplatformversion").text())
@@ -132,6 +137,7 @@ class ParseTest {
 
     @Test
     fun testFileParseNoCharsetMethod() = runTest {
+
         val resourceName = "htmltests/xwiki-1324.html.gz"
         val doc = TestHelper.parseResource(resourceName, baseUri = resourceName)
         assertEquals("XWiki Jetty HSQLDB 12.1-SNAPSHOT", doc.select("#xwikiplatformversion").text())

@@ -8,6 +8,7 @@ import com.fleeksoft.ksoup.exception.ValidationException
 import com.fleeksoft.ksoup.internal.StringUtil
 import com.fleeksoft.ksoup.isJsOrWasm
 import com.fleeksoft.ksoup.isWasmJs
+import com.fleeksoft.ksoup.isWasmWasi
 import com.fleeksoft.ksoup.nodes.NodeIteratorTest.Companion.assertIterates
 import com.fleeksoft.ksoup.parameterizedTest
 import com.fleeksoft.ksoup.parser.ParseSettings
@@ -2866,7 +2867,7 @@ Three
     private fun checkRegexExceptionFunc(func: () -> Unit) {
         if (Platform.isJsOrWasm()) {
             val ex: Throwable = assertFails { func() }
-            val checkStr = if (Platform.isWasmJs()) "Invalid hexadecimal escape sequence near index" else "Invalid regular expression: /\\x/gu"
+            val checkStr = if (Platform.isWasmJs() || Platform.isWasmWasi()) "Invalid hexadecimal escape sequence near index" else "Invalid regular expression: /\\x/gu"
             assertContains(ex.message ?: "", checkStr, ignoreCase = true)
         } else {
             val ex: Throwable = assertFailsWith<IllegalArgumentException> { func() }

@@ -1342,6 +1342,7 @@ class HtmlParserTest {
 
     @Test
     fun testInvalidTableContents() = runTest {
+
         val resourceName = "htmltests/table-invalid-elements.html"
         val doc = TestHelper.parseResource(resourceName = resourceName, charsetName = "UTF-8")
         doc.outputSettings().prettyPrint(true)
@@ -1548,6 +1549,7 @@ class HtmlParserTest {
 
     @Test
     fun testTemplateInsideTable() = runTest {
+
         val resourceName = "htmltests/table-polymer-template.html"
         val doc = TestHelper.parseResource(resourceName = resourceName, charsetName = "UTF-8")
         doc.outputSettings().prettyPrint(true)
@@ -1585,6 +1587,7 @@ class HtmlParserTest {
 
     @Test
     fun handlesXmlDeclAndCommentsBeforeDoctype() = runTest {
+
         val resourceName = "htmltests/comments.html"
         val doc = TestHelper.parseResource(resourceName = resourceName, charsetName = "UTF-8")
 
@@ -1628,6 +1631,7 @@ class HtmlParserTest {
 
     @Test
     fun characterReaderBuffer() = runTest {
+
         val resourceName = "htmltests/character-reader-buffer.html.gz"
         val doc = TestHelper.parseResource(resourceName = resourceName, charsetName = "UTF-8")
         val expectedHref = "http://www.domain.com/path?param_one=value&param_two=value"
@@ -1886,6 +1890,7 @@ class HtmlParserTest {
 
     @Test
     fun adoption() = runTest {
+
         // https://github.com/jhy/jsoup/issues/2267
         val doc = TestHelper.parseResource("/htmltests/adopt-1.html")
         assertEquals("TEXT-AAA TEXT-BBB TEXT-CCC TEXT-DDD", doc.text())

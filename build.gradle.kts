@@ -384,6 +384,13 @@ class MicroAmper(val project: Project) {
                     }
                 }
 
+                "wasmWasi" -> kotlin.wasmWasi {
+                    nodejs()
+                    kotlin.sourceSets {
+                        ssDependsOn("wasmWasi", "wasm")
+                    }
+                }
+
                 "android" -> kotlin.androidTarget {}
                 "linuxX64" -> kotlin.linuxX64()
                 "linuxArm64" -> kotlin.linuxArm64()
