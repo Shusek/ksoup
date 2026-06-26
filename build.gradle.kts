@@ -1,5 +1,6 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
+import org.gradle.api.publish.PublishingExtension
 import java.nio.file.Paths
 import kotlin.io.path.pathString
 import kotlin.jvm.optionals.getOrNull
@@ -10,7 +11,7 @@ plugins {
 }
 
 val libFinder = versionCatalogs.find("libs").get()
-var REAL_VERSION = libs.versions.libraryVersion.get()
+var REAL_VERSION = providers.gradleProperty("ksoupPublishVersion").orNull ?: libs.versions.libraryVersion.get()
 val JVM_TARGET = JvmTarget.JVM_17
 val JDK_VERSION = JavaVersion.VERSION_17
 
@@ -65,6 +66,29 @@ allprojects {
 subprojects {
     if (!project.file("module.yaml").exists()) return@subprojects
     apply(plugin = "kotlin-multiplatform")
+
+    plugins.withId("com.vanniktech.maven.publish") {
+        extensions.configure<PublishingExtension>("publishing") {
+            repositories {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri(
+                        providers.gradleProperty("githubPackagesUrl")
+                            .orElse("https://maven.pkg.github.com/Shusek/ksoup")
+                            .get()
+                    )
+                    credentials {
+                        username = providers.gradleProperty("gpr.user")
+                            .orElse(System.getenv("GITHUB_ACTOR") ?: "Shusek")
+                            .get()
+                        password = providers.gradleProperty("gpr.key")
+                            .orElse(System.getenv("GITHUB_TOKEN") ?: "")
+                            .get()
+                    }
+                }
+            }
+        }
+    }
 
     kotlin {
         androidTarget {

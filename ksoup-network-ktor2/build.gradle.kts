@@ -4,10 +4,10 @@ plugins {
 }
 
 group = "com.fleeksoft.ksoup"
-version = libs.versions.libraryVersion.get()
+version = rootProject.version
 
 mavenPublishing {
-    coordinates("com.fleeksoft.ksoup", "ksoup-network-ktor2", libs.versions.libraryVersion.get())
+    coordinates("com.fleeksoft.ksoup", "ksoup-network-ktor2", version.toString())
     pom {
         name.set("ksoup-network")
         description.set("Ksoup is a Kotlin Multiplatform library for working with HTML and XML, and offers an easy-to-use API for URL fetching, data parsing, extraction, and manipulation using DOM and CSS selectors.")
