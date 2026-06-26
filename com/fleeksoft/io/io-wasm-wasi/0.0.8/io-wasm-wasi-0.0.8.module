@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../io/0.0.8/io-0.0.8.module",
+    "group": "com.fleeksoft.io",
+    "module": "io",
+    "version": "0.0.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.31.0"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "com.fleeksoft.charset",
+          "module": "charset",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "io-wasm-wasi-0.0.8.klib",
+          "url": "io-wasm-wasi-0.0.8.klib",
+          "size": 18671,
+          "sha512": "51b6004f1987d145084a9bba71e96ff66e1bf36c500cc856152b1241a07fd6cb1775bfc35c81049c70261e79503d8d4d7188c3c713339f20d22f35073e811266",
+          "sha256": "c11107cd102387470f268240ae2337efcca4ba899f007d81d4a46896023401c6",
+          "sha1": "ddd3c908b94fb22006a551b6a7b2c2346cbfb99c",
+          "md5": "831e498f797ebe5c90824a4e7724e14e"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.31.0"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "com.fleeksoft.charset",
+          "module": "charset",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "io-wasm-wasi-0.0.8.klib",
+          "url": "io-wasm-wasi-0.0.8.klib",
+          "size": 18671,
+          "sha512": "51b6004f1987d145084a9bba71e96ff66e1bf36c500cc856152b1241a07fd6cb1775bfc35c81049c70261e79503d8d4d7188c3c713339f20d22f35073e811266",
+          "sha256": "c11107cd102387470f268240ae2337efcca4ba899f007d81d4a46896023401c6",
+          "sha1": "ddd3c908b94fb22006a551b6a7b2c2346cbfb99c",
+          "md5": "831e498f797ebe5c90824a4e7724e14e"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "files": [
+        {
+          "name": "io-wasm-wasi-0.0.8-sources.jar",
+          "url": "io-wasm-wasi-0.0.8-sources.jar",
+          "size": 5949,
+          "sha512": "c595525d5052e6fe0ad88568281fb7387b21d40338ea857b38f0e033dc8a817bc145a71eae73bdf6e3c42c3b82b9a2566aaa4e436be59d8f05350a33a6b855d0",
+          "sha256": "a164d5b520739475664378cc6dd7a7c80de96b1b450fcd2e637c37f9285ac9ed",
+          "sha1": "2367f327816f660a3be801a3c38cf145618e07e7",
+          "md5": "d00e374cad85c013704e59e5460b4b72"
+        }
+      ]
+    }
+  ]
+}

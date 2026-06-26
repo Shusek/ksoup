@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../ksoup-kotlinx/0.2.6/ksoup-kotlinx-0.2.6.module",
+    "group": "com.fleeksoft.ksoup",
+    "module": "ksoup-kotlinx",
+    "version": "0.2.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "com.fleeksoft.ksoup",
+          "module": "ksoup-io",
+          "version": {
+            "requires": "0.2.6"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "kotlinx-io",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.8.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksoup-kotlinx-wasm-wasi-0.2.6.klib",
+          "url": "ksoup-kotlinx-wasm-wasi-0.2.6.klib",
+          "size": 10878,
+          "sha512": "f1efe33cd72c5b235d4825817e12b143e5b6930ceb5b0e07bffcc07539280432428517d4795154d6dffd079d806eafa6bf3e51f8e8596290ff551cef01f3159e",
+          "sha256": "c53285241cdcd849a4e2ba88bc03db8c46113777ecfc38401940dbc55a63f131",
+          "sha1": "c196ff373e41640f9a10c55b4a7b0fc2d09441c3",
+          "md5": "ccf606ae6ab8014c8e65a8ffa121176e"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "com.fleeksoft.ksoup",
+          "module": "ksoup-io",
+          "version": {
+            "requires": "0.2.6"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "kotlinx-io",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.8.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksoup-kotlinx-wasm-wasi-0.2.6.klib",
+          "url": "ksoup-kotlinx-wasm-wasi-0.2.6.klib",
+          "size": 10878,
+          "sha512": "f1efe33cd72c5b235d4825817e12b143e5b6930ceb5b0e07bffcc07539280432428517d4795154d6dffd079d806eafa6bf3e51f8e8596290ff551cef01f3159e",
+          "sha256": "c53285241cdcd849a4e2ba88bc03db8c46113777ecfc38401940dbc55a63f131",
+          "sha1": "c196ff373e41640f9a10c55b4a7b0fc2d09441c3",
+          "md5": "ccf606ae6ab8014c8e65a8ffa121176e"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "files": [
+        {
+          "name": "ksoup-kotlinx-wasm-wasi-0.2.6-sources.jar",
+          "url": "ksoup-kotlinx-wasm-wasi-0.2.6-sources.jar",
+          "size": 2739,
+          "sha512": "4cd4c5823068b84367481e902be407f43a6a556c0f2095a0108ad5947403e651849cd924834111fb6d11df7ec17aa1dcd0b7135abe1f19ccf08f30d144e10a9b",
+          "sha256": "bcdeb6b70d4dd0db8ed6cb1b4aadaf58b39aad19896ce012ca97c184810f1f5b",
+          "sha1": "fbdcb1a856a66310d6914505a802f7821d967a68",
+          "md5": "5990e0931701aef038eac18e943350bf"
+        }
+      ]
+    }
+  ]
+}

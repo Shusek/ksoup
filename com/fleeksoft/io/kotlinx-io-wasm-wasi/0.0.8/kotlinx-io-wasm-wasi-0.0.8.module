@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kotlinx-io/0.0.8/kotlinx-io-0.0.8.module",
+    "group": "com.fleeksoft.io",
+    "module": "kotlinx-io",
+    "version": "0.0.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.31.0"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.8.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-io-wasm-wasi-0.0.8.klib",
+          "url": "kotlinx-io-wasm-wasi-0.0.8.klib",
+          "size": 14979,
+          "sha512": "ecb1b4922e3d5f89354693676200b42ab08e98869a574e6005e5e562d6a031b0942b63069c00019cc70d430d31724bab29dac523890414f5ac133262e03e72b2",
+          "sha256": "3fcc32a491eab7ffc68bdeea65d646ade5f2ad522b19f60600919cef14d7fc15",
+          "sha1": "922b533cb1bffa9e7d9ecc1398132332769fed59",
+          "md5": "95dbe6eddd3e9d222a8f89ca016b61a6"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.31.0"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.8.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-io-wasm-wasi-0.0.8.klib",
+          "url": "kotlinx-io-wasm-wasi-0.0.8.klib",
+          "size": 14979,
+          "sha512": "ecb1b4922e3d5f89354693676200b42ab08e98869a574e6005e5e562d6a031b0942b63069c00019cc70d430d31724bab29dac523890414f5ac133262e03e72b2",
+          "sha256": "3fcc32a491eab7ffc68bdeea65d646ade5f2ad522b19f60600919cef14d7fc15",
+          "sha1": "922b533cb1bffa9e7d9ecc1398132332769fed59",
+          "md5": "95dbe6eddd3e9d222a8f89ca016b61a6"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "files": [
+        {
+          "name": "kotlinx-io-wasm-wasi-0.0.8-sources.jar",
+          "url": "kotlinx-io-wasm-wasi-0.0.8-sources.jar",
+          "size": 3828,
+          "sha512": "5534b1e9aa0bd71384bed46cee8e5bbd35b9956a9416d9c33ad2c1d02cf6947e8ba007a32226a9fbac9df2e5911eb2ab9215d7099fe28aa9e326b8b55bd34a80",
+          "sha256": "bc5877b63b6be65824e077e488ded10b5c6cace8d9bbc5d1949f436e54b8da35",
+          "sha1": "574283d4c5a5d28deec89bd4e32c61ebbaa7a252",
+          "md5": "d4526e68fbe07027c43024e42d548e7f"
+        }
+      ]
+    }
+  ]
+}
