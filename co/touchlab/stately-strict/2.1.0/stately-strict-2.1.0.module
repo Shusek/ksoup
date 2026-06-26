@@ -1,0 +1,1123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "co.touchlab",
+    "module": "stately-strict",
+    "version": "2.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.23"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "stately-strict-metadata-2.1.0.jar",
+          "url": "stately-strict-2.1.0.jar",
+          "size": 11309,
+          "sha512": "09ceae105d7c1c34b65da5d667ce303212c7dc02fe9feec5e440e23a9181502c89b215602744458c2bbb1d3a7916d26b0ea6179f6331a00ece9e37a66455adad",
+          "sha256": "b151c19809d31042b5765225a5bea6795a3b9e39ebd9a917339602c3812dac5f",
+          "sha1": "79221be244790e0281a6d2882ca68e45c5342bfc",
+          "md5": "b92a5069601945cca46c4dbaf89bdd60"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "stately-strict-kotlin-2.1.0-sources.jar",
+          "url": "stately-strict-2.1.0-sources.jar",
+          "size": 4189,
+          "sha512": "f358bb4c602d7c63142120c4b0f303a7b3d9893e8b4bd31d1037e1ec87fb1ce133ea8ed6fe335ea538284c8b66ee218dff80ff5b334e02c6675e1fef26c518ee",
+          "sha256": "1ecdaee836bd4182d9ecc96099a70c740a278009b024317daeef52dceae7491c",
+          "sha1": "d936b8a9baefded75fb7debabb767b7202820679",
+          "md5": "8d05108e9f8a9f46748c34b9271f3fef"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativearm32/2.1.0/stately-strict-androidnativearm32-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativearm32",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativearm32/2.1.0/stately-strict-androidnativearm32-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativearm32",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativearm64/2.1.0/stately-strict-androidnativearm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativearm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativearm64/2.1.0/stately-strict-androidnativearm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativearm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativex64/2.1.0/stately-strict-androidnativex64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativex64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativex64/2.1.0/stately-strict-androidnativex64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativex64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativex86/2.1.0/stately-strict-androidnativex86-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativex86",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-androidnativex86/2.1.0/stately-strict-androidnativex86-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-androidnativex86",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iosarm64/2.1.0/stately-strict-iosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iosarm64/2.1.0/stately-strict-iosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iosarm64/2.1.0/stately-strict-iosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iossimulatorarm64/2.1.0/stately-strict-iossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iossimulatorarm64/2.1.0/stately-strict-iossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iossimulatorarm64/2.1.0/stately-strict-iossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iosx64/2.1.0/stately-strict-iosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iosx64/2.1.0/stately-strict-iosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-iosx64/2.1.0/stately-strict-iosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-iosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../stately-strict-js/2.1.0/stately-strict-js-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-js",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../stately-strict-js/2.1.0/stately-strict-js-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-js",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../stately-strict-js/2.1.0/stately-strict-js-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-js",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../stately-strict-jvm/2.1.0/stately-strict-jvm-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-jvm",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../stately-strict-jvm/2.1.0/stately-strict-jvm-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-jvm",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../stately-strict-jvm/2.1.0/stately-strict-jvm-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-jvm",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-linuxarm64/2.1.0/stately-strict-linuxarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-linuxarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-linuxarm64/2.1.0/stately-strict-linuxarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-linuxarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-linuxx64/2.1.0/stately-strict-linuxx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-linuxx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-linuxx64/2.1.0/stately-strict-linuxx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-linuxx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-macosarm64/2.1.0/stately-strict-macosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-macosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-macosarm64/2.1.0/stately-strict-macosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-macosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-macosarm64/2.1.0/stately-strict-macosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-macosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-macosx64/2.1.0/stately-strict-macosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-macosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-macosx64/2.1.0/stately-strict-macosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-macosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-macosx64/2.1.0/stately-strict-macosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-macosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-mingwx64/2.1.0/stately-strict-mingwx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-mingwx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-mingwx64/2.1.0/stately-strict-mingwx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-mingwx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvosarm64/2.1.0/stately-strict-tvosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvosarm64/2.1.0/stately-strict-tvosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvosarm64/2.1.0/stately-strict-tvosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvossimulatorarm64/2.1.0/stately-strict-tvossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvossimulatorarm64/2.1.0/stately-strict-tvossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvossimulatorarm64/2.1.0/stately-strict-tvossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvosx64/2.1.0/stately-strict-tvosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvosx64/2.1.0/stately-strict-tvosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "tvosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-tvosx64/2.1.0/stately-strict-tvosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-tvosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../stately-strict-wasm-js/2.1.0/stately-strict-wasm-js-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-wasm-js",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../stately-strict-wasm-js/2.1.0/stately-strict-wasm-js-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-wasm-js",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../stately-strict-wasm-js/2.1.0/stately-strict-wasm-js-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-wasm-js",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "available-at": {
+        "url": "../../stately-strict-wasm-wasi/2.1.0/stately-strict-wasm-wasi-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-wasm-wasi",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "available-at": {
+        "url": "../../stately-strict-wasm-wasi/2.1.0/stately-strict-wasm-wasi-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-wasm-wasi",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "available-at": {
+        "url": "../../stately-strict-wasm-wasi/2.1.0/stately-strict-wasm-wasi-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-wasm-wasi",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosarm32/2.1.0/stately-strict-watchosarm32-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosarm32",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosarm32/2.1.0/stately-strict-watchosarm32-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosarm32",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosArm32MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosarm32/2.1.0/stately-strict-watchosarm32-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosarm32",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosarm64/2.1.0/stately-strict-watchosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosarm64/2.1.0/stately-strict-watchosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosarm64/2.1.0/stately-strict-watchosarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosdevicearm64/2.1.0/stately-strict-watchosdevicearm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosdevicearm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosdevicearm64/2.1.0/stately-strict-watchosdevicearm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosdevicearm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosdevicearm64/2.1.0/stately-strict-watchosdevicearm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosdevicearm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchossimulatorarm64/2.1.0/stately-strict-watchossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchossimulatorarm64/2.1.0/stately-strict-watchossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchossimulatorarm64/2.1.0/stately-strict-watchossimulatorarm64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchossimulatorarm64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosx64/2.1.0/stately-strict-watchosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosx64/2.1.0/stately-strict-watchosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosx64",
+        "version": "2.1.0"
+      }
+    },
+    {
+      "name": "watchosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../stately-strict-watchosx64/2.1.0/stately-strict-watchosx64-2.1.0.module",
+        "group": "co.touchlab",
+        "module": "stately-strict-watchosx64",
+        "version": "2.1.0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../ksoup/0.2.6/ksoup-0.2.6.module",
+    "group": "com.fleeksoft.ksoup",
+    "module": "ksoup",
+    "version": "0.2.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "com.fleeksoft.charset",
+          "module": "charset",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksoup-wasm-wasi-0.2.6.klib",
+          "url": "ksoup-wasm-wasi-0.2.6.klib",
+          "size": 790475,
+          "sha512": "bb87512c582573e155e4263faf50b06e0dc29265d74257d8010a6ac75c38914d231e9448ebef8b314d69d540a089683b3ef2d53eaec9b021542521980bc0fece",
+          "sha256": "053b15a8a2af9cebb20634523ba14fdb1a3c9460a22e524e0b0252216cb7b6fc",
+          "sha1": "3023bf0e04cc3eafcfc9c2da07e351ffb71fa3b6",
+          "md5": "42c91e9fd7f988276500c2dba0419a0f"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "com.fleeksoft.charset",
+          "module": "charset",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "stately-concurrency",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksoup-wasm-wasi-0.2.6.klib",
+          "url": "ksoup-wasm-wasi-0.2.6.klib",
+          "size": 790475,
+          "sha512": "bb87512c582573e155e4263faf50b06e0dc29265d74257d8010a6ac75c38914d231e9448ebef8b314d69d540a089683b3ef2d53eaec9b021542521980bc0fece",
+          "sha256": "053b15a8a2af9cebb20634523ba14fdb1a3c9460a22e524e0b0252216cb7b6fc",
+          "sha1": "3023bf0e04cc3eafcfc9c2da07e351ffb71fa3b6",
+          "md5": "42c91e9fd7f988276500c2dba0419a0f"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "files": [
+        {
+          "name": "ksoup-wasm-wasi-0.2.6-sources.jar",
+          "url": "ksoup-wasm-wasi-0.2.6-sources.jar",
+          "size": 220958,
+          "sha512": "1f42f096de71847048e956de1509d1164e26bc652a66333aeabb263fdc927f579b274823e0016bd3f380f79363cbf5f4d4d413ac9df6dd2e15a6c5d4f1ed8e2b",
+          "sha256": "3e0d748bfa93365e8dfdf7ad3f4e17b654242d40f023fba2afe4e1678742e6cf",
+          "sha1": "6783dbd9a30a9dac721198a1b9ff8435a7a8bf45",
+          "md5": "5c96ba8ed4160537fae172e620cfd78c"
+        }
+      ]
+    }
+  ]
+}

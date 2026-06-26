@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../charset/0.0.8/charset-0.0.8.module",
+    "group": "com.fleeksoft.charset",
+    "module": "charset",
+    "version": "0.0.8",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.31.0"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "stately-concurrency",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "charset-wasm-wasi-0.0.8.klib",
+          "url": "charset-wasm-wasi-0.0.8.klib",
+          "size": 439017,
+          "sha512": "828890e7d89a19a0585642282d1c3d7b383d668f4edfc67b7f8e663fcfb4711b30c4d58214736748e640e183430a393fcf238a7c43e07f8f9f249bdf270771d6",
+          "sha256": "863b0d5c418e11aa00f826cb4f896c6fc4c93155e7835ab355e9a23641bead7d",
+          "sha1": "0d9ce550efe579039c832e6a1fa7d6d9d20001e7",
+          "md5": "2e0bc169045cb5cd7e6bbd45cc34c919"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.31.0"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "stately-concurrency",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "charset-wasm-wasi-0.0.8.klib",
+          "url": "charset-wasm-wasi-0.0.8.klib",
+          "size": 439017,
+          "sha512": "828890e7d89a19a0585642282d1c3d7b383d668f4edfc67b7f8e663fcfb4711b30c4d58214736748e640e183430a393fcf238a7c43e07f8f9f249bdf270771d6",
+          "sha256": "863b0d5c418e11aa00f826cb4f896c6fc4c93155e7835ab355e9a23641bead7d",
+          "sha1": "0d9ce550efe579039c832e6a1fa7d6d9d20001e7",
+          "md5": "2e0bc169045cb5cd7e6bbd45cc34c919"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "files": [
+        {
+          "name": "charset-wasm-wasi-0.0.8-sources.jar",
+          "url": "charset-wasm-wasi-0.0.8-sources.jar",
+          "size": 264571,
+          "sha512": "53505796db557a6f9c28a45fd4d6aad4f27f1b08b937d9ff896f4c65539786ac19c782886ec68e9daf12af8d2d3cd0ab88452e0d733171055de25d14606f9df2",
+          "sha256": "1f62a44a4527d29f63f933f2238579f8df7974c3b197d4c36a3781c46cbf74f2",
+          "sha1": "e90d6bc6e493a7941ef4e39543c5fa4ee2d7bc12",
+          "md5": "8389cacc7803ba599b0695e57cc4a3ac"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../stately-concurrency/2.1.0/stately-concurrency-2.1.0.module",
+    "group": "co.touchlab",
+    "module": "stately-concurrency",
+    "version": "2.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.23"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "stately-concurrency-wasm-wasi-2.1.0.klib",
+          "url": "stately-concurrency-wasm-wasi-2.1.0.klib",
+          "size": 18311,
+          "sha512": "c075079155adf1a8dde546b33713289cd514c81f6819f19ca7045251a826ddcf8bc87c2a9ec8ee6b3ed805174001744421577e72df2be029604b760c1e5bb677",
+          "sha256": "438cdd53f78718fde42b6c810193ecd5875c8f0bdeb7e9a70332fcc803d54546",
+          "sha1": "063bdbc1e8bd0f06263782cda6d480570398b9ac",
+          "md5": "62c74e3c7fe68731fe789d2f93abdde9"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.9.23"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "stately-strict",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "stately-concurrency-wasm-wasi-2.1.0.klib",
+          "url": "stately-concurrency-wasm-wasi-2.1.0.klib",
+          "size": 18311,
+          "sha512": "c075079155adf1a8dde546b33713289cd514c81f6819f19ca7045251a826ddcf8bc87c2a9ec8ee6b3ed805174001744421577e72df2be029604b760c1e5bb677",
+          "sha256": "438cdd53f78718fde42b6c810193ecd5875c8f0bdeb7e9a70332fcc803d54546",
+          "sha1": "063bdbc1e8bd0f06263782cda6d480570398b9ac",
+          "md5": "62c74e3c7fe68731fe789d2f93abdde9"
+        }
+      ]
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "files": [
+        {
+          "name": "stately-concurrency-wasm-wasi-2.1.0-sources.jar",
+          "url": "stately-concurrency-wasm-wasi-2.1.0-sources.jar",
+          "size": 11357,
+          "sha512": "32383dff8e5ea54d3528799c0a6e8e448f269c0d5f3dbcef9611277ab08b217b6d372068b10727b5cf2245e7522c30207755ed90dd9027b29cdcc42239f22b28",
+          "sha256": "cf54120b98a00fa87cdd20010ebe6159bf02b1d19fc88157d884b3285a01b300",
+          "sha1": "81c0f49b12312367c0f3578ae5840cdd34c38d4d",
+          "md5": "25b3c155a279ed061e0a7e496dec2d6d"
+        }
+      ]
+    }
+  ]
+}

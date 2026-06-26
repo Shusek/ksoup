@@ -1,0 +1,1176 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.fleeksoft.ksoup",
+    "module": "ksoup",
+    "version": "0.2.6",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "com.fleeksoft.io",
+          "module": "io-core",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "com.fleeksoft.charset",
+          "module": "charset",
+          "version": {
+            "requires": "0.0.8"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.10"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "stately-concurrency",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksoup-metadata-0.2.6.jar",
+          "url": "ksoup-0.2.6.jar",
+          "size": 87757,
+          "sha512": "6a85c97f0224551bcc357b3de7b8e3277e08e9462591be73bc7e4d78f86a931dacbb1fa0d43a40a6999353d89c2a4394bb689d2ddc3331d1605f203cb401d0a3",
+          "sha256": "f639e0952e40c63227872e6691de36e517c3a65baa145dcae35a7a94686614eb",
+          "sha1": "56cf8003c9b3e3171217fd663afd3f0899180ba8",
+          "md5": "a7e14799472581efa2fc7069e9c5e13b"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "ksoup-kotlin-0.2.6-sources.jar",
+          "url": "ksoup-0.2.6-sources.jar",
+          "size": 223709,
+          "sha512": "7a69246707bab08e6ebfcf6f46445082fa94822587d636b011d6e731d105f38f13ebd5a59f8d8d4d4f450ab892797f06836840f4d5d6c5feb962489ba2bce333",
+          "sha256": "a67cff08170e5082cba81f1af4f4ae9653c9185957fc46a0451a162e3ac88d58",
+          "sha1": "96499830dba926958930d4352510381200e81643",
+          "md5": "a3a51bfe515691fef5a87ad9e05f7390"
+        }
+      ]
+    },
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../ksoup-android/0.2.6/ksoup-android-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-android",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../ksoup-android/0.2.6/ksoup-android-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-android",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../ksoup-android/0.2.6/ksoup-android-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-android",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativearm32/0.2.6/ksoup-androidnativearm32-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativearm32",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativearm32/0.2.6/ksoup-androidnativearm32-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativearm32",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativearm64/0.2.6/ksoup-androidnativearm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativearm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativearm64/0.2.6/ksoup-androidnativearm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativearm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativex64/0.2.6/ksoup-androidnativex64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativex64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativex64/0.2.6/ksoup-androidnativex64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativex64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeX86ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativex86/0.2.6/ksoup-androidnativex86-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativex86",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "androidNativeX86SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-androidnativex86/0.2.6/ksoup-androidnativex86-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-androidnativex86",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iosarm64/0.2.6/ksoup-iosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iosarm64/0.2.6/ksoup-iosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iosarm64/0.2.6/ksoup-iosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iossimulatorarm64/0.2.6/ksoup-iossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iossimulatorarm64/0.2.6/ksoup-iossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iossimulatorarm64/0.2.6/ksoup-iossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iosx64/0.2.6/ksoup-iosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iosx64/0.2.6/ksoup-iosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-iosx64/0.2.6/ksoup-iosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-iosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../ksoup-js/0.2.6/ksoup-js-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-js",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../ksoup-js/0.2.6/ksoup-js-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-js",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../ksoup-js/0.2.6/ksoup-js-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-js",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../ksoup-jvm/0.2.6/ksoup-jvm-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-jvm",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../ksoup-jvm/0.2.6/ksoup-jvm-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-jvm",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../ksoup-jvm/0.2.6/ksoup-jvm-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-jvm",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-linuxarm64/0.2.6/ksoup-linuxarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-linuxarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-linuxarm64/0.2.6/ksoup-linuxarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-linuxarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-linuxx64/0.2.6/ksoup-linuxx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-linuxx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-linuxx64/0.2.6/ksoup-linuxx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-linuxx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-macosarm64/0.2.6/ksoup-macosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-macosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-macosarm64/0.2.6/ksoup-macosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-macosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-macosarm64/0.2.6/ksoup-macosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-macosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-macosx64/0.2.6/ksoup-macosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-macosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-macosx64/0.2.6/ksoup-macosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-macosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-macosx64/0.2.6/ksoup-macosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-macosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-mingwx64/0.2.6/ksoup-mingwx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-mingwx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-mingwx64/0.2.6/ksoup-mingwx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-mingwx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvosarm64/0.2.6/ksoup-tvosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvosarm64/0.2.6/ksoup-tvosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvosarm64/0.2.6/ksoup-tvosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvossimulatorarm64/0.2.6/ksoup-tvossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvossimulatorarm64/0.2.6/ksoup-tvossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvossimulatorarm64/0.2.6/ksoup-tvossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvosx64/0.2.6/ksoup-tvosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvosx64/0.2.6/ksoup-tvosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "tvosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-tvosx64/0.2.6/ksoup-tvosx64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-tvosx64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../ksoup-wasm-js/0.2.6/ksoup-wasm-js-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-wasm-js",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../ksoup-wasm-js/0.2.6/ksoup-wasm-js-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-wasm-js",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../ksoup-wasm-js/0.2.6/ksoup-wasm-js-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-wasm-js",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "wasmWasiApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "available-at": {
+        "url": "../../ksoup-wasm-wasi/0.2.6/ksoup-wasm-wasi-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-wasm-wasi",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "wasmWasiRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "available-at": {
+        "url": "../../ksoup-wasm-wasi/0.2.6/ksoup-wasm-wasi-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-wasm-wasi",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "wasmWasiSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "wasi"
+      },
+      "available-at": {
+        "url": "../../ksoup-wasm-wasi/0.2.6/ksoup-wasm-wasi-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-wasm-wasi",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosArm32ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosarm32/0.2.6/ksoup-watchosarm32-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosarm32",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosarm32/0.2.6/ksoup-watchosarm32-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosarm32",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosArm32MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosarm32/0.2.6/ksoup-watchosarm32-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosarm32",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosarm64/0.2.6/ksoup-watchosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosarm64/0.2.6/ksoup-watchosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosarm64/0.2.6/ksoup-watchosarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosdevicearm64/0.2.6/ksoup-watchosdevicearm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosdevicearm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosdevicearm64/0.2.6/ksoup-watchosdevicearm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosdevicearm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchosdevicearm64/0.2.6/ksoup-watchosdevicearm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchosdevicearm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchossimulatorarm64/0.2.6/ksoup-watchossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchossimulatorarm64/0.2.6/ksoup-watchossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchossimulatorarm64",
+        "version": "0.2.6"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../ksoup-watchossimulatorarm64/0.2.6/ksoup-watchossimulatorarm64-0.2.6.module",
+        "group": "com.fleeksoft.ksoup",
+        "module": "ksoup-watchossimulatorarm64",
+        "version": "0.2.6"
+      }
+    }
+  ]
+}
